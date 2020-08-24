@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="magepow" translate="label" sortOrder="1">
+			<label>Magepow</label>
+		</tab>
+		<section id="magepow_ajax_infinite_scroll" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+			<class>separator-top</class>
+			<label>Infinite Scroll</label>
+			<tab>magepow</tab>
+			<resource>Magepow_InfiniteScroll::magepow_ajax_infinite_scroll</resource>
+			<group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>General Settings</label>
+				<field id="enabled" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Enabled</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+
+			<group id="selectors" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>DOM Selectors (for custom themes)</label>
+				<field id="delay" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Delay (ms)</label>
+					<comment><![CDATA[Delay value for scroll down. default: 600]]></comment>
+				</field>
+				<field id="content" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Content</label>
+					<comment><![CDATA[Selector for the element that surrounds the items you will be loading more of. (For Ex.= .classname/#id)]]></comment>
+				</field>
+				<field id="pagination" translate="label comment" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Pagination</label>
+					<comment><![CDATA[Selector for pagination. (For Ex.= .classname/#id)]]></comment>
+				</field>
+				<field id="next" translate="label comment" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Next</label>
+					<comment><![CDATA[Selector for the link to the next page. (For Ex.= .classname/#id)]]></comment>
+				</field>
+				<field id="item" translate="label comment" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Item</label>
+					<comment><![CDATA[Selector for all items you will receive. (For Ex.= .classname/#id)]]></comment>
+				</field>
+			</group>
+			<group id="design" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Design</label>
+				<field id="loading_image" translate="label comment" type="image" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>AJAX Progress Image Path</label>
+					<backend_model>Magepow\InfiniteScroll\Model\Config\Backend\Image</backend_model>
+					<base_url type="media" scope_info="1">magepow/ajax_infinite_scroll</base_url>
+					<comment>Specify path to loading image within your theme</comment>
+				</field>
+				<field id="loading_text" translate="label comment" type="text" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Loading Text</label>
+				</field>
+				<field id="done_text" translate="label comment" type="text" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Done Text</label>
+				</field>
+				<field id="load_more" translate="label comment" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Load More threshold</label>  
+					<comment><![CDATA[When this page number is reached, a button to load more products will be shown instead of continue loading products automatically with the scroll (this could be useful to help the user to reach the footer). TIP: use a high number to disable this feature.]]></comment>
+				</field>
+				<field id="load_more_text" translate="label comment" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Load More button text</label>  
+					<comment><![CDATA[Set an offset before page end from which the content will start to load. A high number will load the next page a long time before the user reaches the bottom of the screen.]]></comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

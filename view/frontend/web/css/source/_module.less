@@ -1,0 +1,43 @@
+#infinite-scroll-top
+    {
+       .lib-css(border-radius, 50%);
+        .lib-css(opacity, 0.65);
+    
+        background-color: #ea7a06;
+        background-image: url(../Magepow_InfiniteScroll/images/scroll-to-top.png);
+        background-position: 50% 48%;
+        background-repeat: no-repeat;
+        bottom: 30px;
+        display: none;
+        height: 45px;
+        width: 55px;
+        position: fixed;
+        right: 30px;
+        text-indent: -9999px;
+        z-index: 1;
+        width: 50px;
+        
+        &:hover {
+            background-color: #de2222;
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    }
+ 
+//
+//    Tablet and mobile
+//--------------------------------------
+#infinite-scroll-top:hover
+    {
+        opacity:1.0;
+    }
+    .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  
+    #infinite-scroll-top {
+        bottom: 15px;
+        right: 15px;
+    }
+
+}

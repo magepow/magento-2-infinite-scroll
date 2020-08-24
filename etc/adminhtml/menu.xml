@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+            <add id="Magepow_InfiniteScroll::menu_title" title="Magepow" module="Magepow_InfiniteScroll" sortOrder="20" resource="Magepow_InfiniteScroll::title_menu" />
+            <add id="Magepow_InfiniteScroll::manage_posts" title="Magepow InfiniteScroll" module="Magepow_InfiniteScroll" sortOrder="1" parent="Magepow_InfiniteScroll::menu_title" resource="Magepow_InfiniteScroll::manage_posts" />
+            <add id="Magepow_InfiniteScroll::module_config" title="InfiniteScroll Configuration" module="Magepow_InfiniteScroll" sortOrder="2" parent="Magepow_InfiniteScroll::menu_title" action="adminhtml/system_config/edit/section/magepow_ajax_infinite_scroll" resource="Magepow_InfiniteScroll::configuration"/>
+    </menu>
+</config>

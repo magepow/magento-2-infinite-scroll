@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magepow_InfiniteScroll::title_menu" title="Title Menu"
+                          sortOrder="100">
+                    <resource id="Magepow_InfiniteScroll::manage_posts" title="Manage Posts"
+                              sortOrder="2" />
+                    <resource id="Magepow_InfiniteScroll::configuration" title="Configurations"
+                              sortOrder="3" />
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Magepow_InfiniteScroll::system_config"
+                                      title="Magepow Section" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
