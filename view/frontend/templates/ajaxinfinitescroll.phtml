@@ -1,19 +1,22 @@
 <?php
-$isEnabledAjaxInfiniteScroll = $block->isEnabled();
-$delay = !empty($block->getDelay()) ? $block->getDelay() : '600';
-$content = !empty($block->getContent()) ? $block->getContent() : '.main';
-$pagination = !empty($block->getPagination()) ? $block->getPagination() : '.pages-items';
-$next = !empty($block->getNext()) ? $block->getNext() : '.next';
-$item = !empty($block->getItem()) ? $block->getItem() : '.product-item';
+$helper = $this->helper('Magepow\InfiniteScroll\Helper\Data');
+$isEnabled = $helper->isEnabled('magepow_infinitescroll/general/enabled');
+$delay = $helper->getConfigModule('magepow_infinitescroll/general/delay');
+$content = $helper->getConfigModule('magepow_infinitescroll/general/content');
+$pagination = $helper->getConfigModule('magepow_infinitescroll/general/pagination');
+$next = $helper->getConfigModule('magepow_infinitescroll/general/next');
+$item = $helper->getConfigModule('magepow_infinitescroll/general/item');
 $loadingImage = '';
 if ($block->getLoadingImage() != '') {
     $loadingImage = $block->getMediaPath().'/magepow/ajax_infinite_scroll/'.$block->getLoadingImage();
+}else{
+    $loadingImage = $this->getViewFileUrl('images/loader-1.gif');
 }
-$loadingText = !empty($block->getLoadingText()) ? $block->getLoadingText() : '';
-$doneText = !empty($block->getDoneText()) ? $block->getDoneText() : '';
-$loadMore = !empty($block->getLoadMore()) ? $block->getLoadMore() : '3';
-$loadMoreText = !empty($block->getLoadMoreText()) ? $block->getLoadMoreText() : 'Load more items';
-if ($isEnabledAjaxInfiniteScroll) {
+$loadingText = $helper->getConfigModule('magepow_infinitescroll/general/loading_text');
+$doneText = $helper->getConfigModule('magepow_infinitescroll/general/done_text');
+$loadMore = $helper->getConfigModule('magepow_infinitescroll/general/load_more');
+$loadMoreText = $helper->getConfigModule('magepow_infinitescroll/general/load_more_text');
+if ($isEnabled) {
     ?>
     <script>
         require(['jquery', 'Magepow_InfiniteScroll/js/infinitescroll'], function ($) {
@@ -29,18 +32,18 @@ if ($isEnabledAjaxInfiniteScroll) {
                 window.ias = $.ias();
                 window.ias.extension(new IASSpinnerExtension({
                     src: "<?php echo $loadingImage; ?>",
-                    html: '<div style="text-align: center;font-size: 16px;color: #333;display: block;"><img style="display:inline" src="{src}"/><p><?php echo $loadingText; ?></p></div>'
+                    html: '<div class="iass-spinner"><img src="{src}"/><p><?php echo $loadingText; ?></p></div>'
                 }));
 
                 window.ias.extension(new IASNoneLeftExtension({
                     text: "<?php echo $doneText;?>", // override text when no pages left
-                    html: '<div class="ias-noneleft" style="text-align: center;color: #333;letter-spacing: 0px;font-size: 14px;font-weight: 400;">{text}</div>'
+                    html: '<div class="ias-noneleft">{text}</div>'
                 }));
                window.ias.extension(new IASTriggerExtension({
                     text:"<?php echo $loadMoreText ?>",
-                    html:'<div class="ias-trigger ias-trigger-next" style="text-align: center; cursor: pointer;"><button class="load-more" style="font-size:15px;background:#1979c3;color:#fff; border: none;width:100%;"><?php echo $loadMoreText ?></button></div>',
+                    html:'<div class="ias-trigger ias-trigger-next"><button class="load-more"><?php echo $loadMoreText ?></button></div>',
                     textPrev:"<?php echo $loadMoreText ?>",
-                    htmlPrev:'<div class="ias-trigger ias-trigger-prev" style="text-align: center; cursor: pointer;"><button class="load-more" style="font-size:15px;background:#1979c3;color:#fff;width:100%;"><?php echo $loadMoreText ?></button></div>',
+                    htmlPrev:'<div class="ias-trigger ias-trigger-prev"><button class="load-more"><?php echo $loadMoreText ?></button></div>',
                     offset:"<?php echo $loadMore ?>",
                 }));
                 window.ias.on('rendered', function(items){
