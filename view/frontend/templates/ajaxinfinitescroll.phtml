@@ -1,21 +1,21 @@
 <?php
 $helper = $this->helper('Magepow\InfiniteScroll\Helper\Data');
-$isEnabled = $helper->isEnabled('magepow_infinitescroll/general/enabled');
-$delay = $helper->getConfigModule('magepow_infinitescroll/general/delay');
-$content = $helper->getConfigModule('magepow_infinitescroll/general/content');
-$pagination = $helper->getConfigModule('magepow_infinitescroll/general/pagination');
-$next = $helper->getConfigModule('magepow_infinitescroll/general/next');
-$item = $helper->getConfigModule('magepow_infinitescroll/general/item');
+$isEnabled = $helper->isEnabled('general/enabled');
+$delay = $helper->getConfigModule('general/delay');
+$content = $helper->getConfigModule('general/content');
+$pagination = $helper->getConfigModule('general/pagination');
+$next = $helper->getConfigModule('general/next');
+$item = $helper->getConfigModule('general/item');
 $loadingImage = '';
 if ($block->getLoadingImage() != '') {
     $loadingImage = $block->getMediaPath().'/magepow/ajax_infinite_scroll/'.$block->getLoadingImage();
 }else{
     $loadingImage = $this->getViewFileUrl('images/loader-1.gif');
 }
-$loadingText = $helper->getConfigModule('magepow_infinitescroll/general/loading_text');
-$doneText = $helper->getConfigModule('magepow_infinitescroll/general/done_text');
-$loadMore = $helper->getConfigModule('magepow_infinitescroll/general/load_more');
-$loadMoreText = $helper->getConfigModule('magepow_infinitescroll/general/load_more_text');
+$loadingText = $helper->getConfigModule('general/loading_text');
+$doneText = $helper->getConfigModule('general/done_text');
+$loadMore = $helper->getConfigModule('general/load_more');
+$loadMoreText = $helper->getConfigModule('general/load_more_text');
 if ($isEnabled) {
     ?>
     <script>
@@ -54,7 +54,7 @@ if ($isEnabled) {
     </script>
     <?php
 } ?>
-<button id="infinite-scroll-top" onclick="topFunction()">Top</button>
+<button id="infinite-scroll-top" onclick="topFunction()"></button>
 <script>
 //Get the button
 var mybutton = document.getElementById("infinite-scroll-top");
