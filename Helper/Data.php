@@ -43,7 +43,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     }
 
     /**
-     * Is ajax cart enabled.
+     * Is enabled.
      *
      * @return bool
      */
