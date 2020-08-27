@@ -1,7 +1,6 @@
 <?php
 $helper = $this->helper('Magepow\InfiniteScroll\Helper\Data');
 $isEnabled      = $helper->getConfigModule('general/enabled');
-if( !$isEnabled ) return;
 $delay          = $helper->getConfigModule('general/delay');
 $content        = $helper->getConfigModule('general/content');
 $pagination     = $helper->getConfigModule('general/pagination');
