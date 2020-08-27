@@ -1,22 +1,22 @@
 <?php
 $helper = $this->helper('Magepow\InfiniteScroll\Helper\Data');
-$isEnabled = $helper->isEnabled('general/enabled');
+$isEnabled      = $helper->getConfigModule('general/enabled');
 if( !$isEnabled ) return;
-$delay = $helper->getConfigModule('general/delay');
-$content = $helper->getConfigModule('general/content');
-$pagination = $helper->getConfigModule('general/pagination');
-$next = $helper->getConfigModule('general/next');
-$item = $helper->getConfigModule('general/item');
-$loadingImage = $helper->getConfigModule('general/loading_image');
+$delay          = $helper->getConfigModule('general/delay');
+$content        = $helper->getConfigModule('general/content');
+$pagination     = $helper->getConfigModule('general/pagination');
+$next           = $helper->getConfigModule('general/next');
+$item           = $helper->getConfigModule('general/item');
+$loadingText    = $helper->getConfigModule('general/loading_text');
+$doneText       = $helper->getConfigModule('general/done_text');
+$loadMore       = $helper->getConfigModule('general/load_more');
+$loadMoreText   = $helper->getConfigModule('general/load_more_text');
+$loadingImage   = $helper->getConfigModule('general/loading_image');
 if ($loadingImage) {
     $loadingImage = $block->getMedia($loadingImage);
 }else{
     $loadingImage = $this->getViewFileUrl('images/loader-1.gif');
 }
-$loadingText = $helper->getConfigModule('general/loading_text');
-$doneText = $helper->getConfigModule('general/done_text');
-$loadMore = $helper->getConfigModule('general/load_more');
-$loadMoreText = $helper->getConfigModule('general/load_more_text');
 ?>
 <script>
     require(['jquery', 'magepow/infinitescroll'], function ($) {

@@ -3,7 +3,7 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="before.body.end">
-            <block class="Magepow\InfiniteScroll\Block\InfiniteScroll" name="infinite_scroll.block" template="Magepow_InfiniteScroll::infinitescroll.phtml" />
+            <block class="Magepow\InfiniteScroll\Block\InfiniteScroll" name="infinite_scroll.block" template="Magepow_InfiniteScroll::infinitescroll.phtml" ifconfig="magepow_infinitescroll/general/enabled"/>
         </referenceContainer>
     </body>
 </page>
