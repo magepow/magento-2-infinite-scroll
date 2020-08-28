@@ -2,7 +2,7 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-            <add id="magepow" title="Magepow" module="Magepow_InfiniteScroll" sortOrder="10" resource="Magepow_InfiniteScroll::magepow" />
+            <update id="magepow" title="Magepow" module="Magepow_InfiniteScroll" sortOrder="10" resource="Magepow_InfiniteScroll::magepow" />
             <add id="Magepow_InfiniteScroll::magepow" title="Infinite Scroll" module="Magepow_InfiniteScroll" sortOrder="1" parent="magepow" resource="Magepow_InfiniteScroll::magepow" />
             <add id="Magepow_InfiniteScroll::infinite_scroll" title="Infinite Scroll Settings" module="Magepow_InfiniteScroll" sortOrder="2" parent="Magepow_InfiniteScroll::magepow" action="adminhtml/system_config/edit/section/magepow_infinitescroll" resource="Magepow_InfiniteScroll::magepow"/>
     </menu>
