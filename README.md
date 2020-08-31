@@ -69,8 +69,6 @@ If this project help you reduce time to develop, you can give me a cup of coffee
       
 **Free Extensions List**
 
-* [Magento 2 Recent Sales Notification](https://magepow.com/magento-2-recent-sales-notification.html)
-
 * [Magento 2 Categories Extension](https://magepow.com/magento-categories-extension.html)
 
 * [Magento 2 Sticky Cart](https://magepow.com/magento-sticky-cart.html)
