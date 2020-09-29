@@ -33,6 +33,7 @@ class InfiniteScroll extends \Magento\Framework\View\Element\Template
     public function getMedia($img=null)
     {
         $urlMedia = $this->storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
+        if($img) return $urlMedia . $img;
         return $urlMedia;
     }
 
