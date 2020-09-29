@@ -11,8 +11,9 @@ $doneText       = $helper->getConfigModule('general/done_text');
 $loadMore       = $helper->getConfigModule('general/load_more');
 $loadMoreText   = $helper->getConfigModule('general/load_more_text');
 $loadingImage   = $helper->getConfigModule('general/loading_image');
+$imgPath        = 'magepow/infinitescroll/'.$loadingImage;
 if ($loadingImage) {
-    $loadingImage = $block->getMedia().'/magepow/infinitescroll/'.$loadingImage;
+    $loadingImage = $block->getMedia($imgPath);
 }else{
     $loadingImage = $this->getViewFileUrl('images/loader-1.gif');
 } 
