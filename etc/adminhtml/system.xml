@@ -40,9 +40,8 @@
 				<field id="loading_image" translate="label comment" type="image" sortOrder="25"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Loading Image placeholder :</label>
                     <comment>Allowed file types: jpg, jpeg, gif, png.</comment>
-                    <backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
-                    <upload_dir config="system/filesystem/media" scope_info="1">magepow/infinitescroll</upload_dir>
-                    <base_url type="media" scope_info="1">magepow/infinitescroll</base_url>
+                    <backend_model>Magepow\InfiniteScroll\Model\Config\Backend\Image</backend_model>
+					<base_url type="media" scope_info="1">magepow/ajax_infinite_scroll</base_url>
                 </field>
 				<field id="loading_text" translate="label comment" type="text" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
 					<label>Loading Text</label>

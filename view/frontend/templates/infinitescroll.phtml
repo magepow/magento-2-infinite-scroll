@@ -12,10 +12,10 @@ $loadMore       = $helper->getConfigModule('general/load_more');
 $loadMoreText   = $helper->getConfigModule('general/load_more_text');
 $loadingImage   = $helper->getConfigModule('general/loading_image');
 if ($loadingImage) {
-    $loadingImage = $block->getMedia($loadingImage);
+    $loadingImage = $block->getMedia().'/magepow/ajax_infinite_scroll/'.$loadingImage;
 }else{
     $loadingImage = $this->getViewFileUrl('images/loader-1.gif');
-}
+} 
 ?>
 <script>
     require(['jquery', 'magepow/infinitescroll'], function ($) {
