@@ -21,6 +21,7 @@ if ($loadingImage) {
 <script>
     require(['jquery', 'magepow/infinitescroll'], function ($) {
         $(document).ready(function () {
+            $('body').addClass('infinitescroll');
             var ias = $.ias({
                 container: "<?php echo $content;?>",
                 item: "<?php echo $item;?>",
