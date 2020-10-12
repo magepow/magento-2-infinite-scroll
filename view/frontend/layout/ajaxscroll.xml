@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="before.body.end">
             <block class="Magepow\InfiniteScroll\Block\InfiniteScroll" name="infinite_scroll.block" template="Magepow_InfiniteScroll::infinitescroll.phtml" ifconfig="magepow_infinitescroll/general/enabled"/>
