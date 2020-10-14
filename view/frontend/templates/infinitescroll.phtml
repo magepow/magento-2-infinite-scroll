@@ -18,8 +18,9 @@ if ($loadingImage) {
     $loadingImage = $this->getViewFileUrl('images/loader-1.gif');
 } 
 ?>
-<script>
+<script type="text/javascript">
     require(['jquery', 'magepow/infinitescroll'], function ($) {
+        "use strict";
         $(document).ready(function () {
             $('body').addClass('infinitescroll');
             var ias = $.ias({
@@ -33,7 +34,7 @@ if ($loadingImage) {
             window.ias = $.ias();
             window.ias.extension(new IASSpinnerExtension({
                 src: "<?php echo $loadingImage; ?>",
-                html: '<div class="iass-spinner"><img src="{src}"/><p><?php echo $loadingText; ?></p></div>'
+                html: '<div class="iass-spinner"><img src="{src}"/><span><?php echo $loadingText; ?></span></div>'
             }));
 
             window.ias.extension(new IASNoneLeftExtension({
