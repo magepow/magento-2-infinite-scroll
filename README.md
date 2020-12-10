@@ -1,4 +1,5 @@
-# magento2-infinitescroll
+# Magento 2 Infinite Scroll
+**Infinite scroll** for Magento 2 automatically loads product catalog without reloading the page. Your customers will be pleasantly surprised with supportive navigation and high performance of your web store.
 
 Before you continue, ensure you meet the following requirements:
 
@@ -6,7 +7,7 @@ Before you continue, ensure you meet the following requirements:
   * You are using a Linux or Mac OS machine. Windows is not currently supported.
   Install magento2-instagram extension
 
-# Step 1 : Download Magento 2 Infinitescroll Extension
+## Step 1 : Download Magento 2 Infinitescroll Extension
 
  ## Install via composer (recommend)
 Run the following commands in Magento 2 root folder:
@@ -15,47 +16,42 @@ composer require magepow/infinitescroll
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy -f
 ```
-  ## Install manual
+
+## Step 2: User guide
+  #### Key features of Magento 2 Infinitescroll Extension:
+  * Ajax scroll without interruption.
+  * Freely scroll down & See what page of the catalog they're on.
+  * Automatically loading pages.
+  * Show Loading Button.
+  * Possibility to give/ share links to certain position.
+  * Easy to customize.
+  * Similar technique as seen on Twitter, Facebook.
+  * Increase the conversion rate at your store.
+  * Easy to Change Button and Loading Text.
+  ### 2.1. General configuration
+
+  `Login to Magento admin > Stores > Configuration > Magepow > Infinitescroll > Enable > Choose Yes to enable the module.`
   
-* extract file from archive
-* deploy file into Magento2 folder `app/code/Magepow/Infinitescroll`. Run following commands
-
- ```
- php bin/magento setup:upgrade
- php bin/magento setup:static-content:deploy -f
- php bin/magento cache:flush
- ```
-
-# Step 2: User guide
-
-  ## 1. General configuration
-
-  Login to magento admin, choose `stores->configuration->magepow->infinitescroll`
+  ![Image of magento admin config](https://github.com/magepow/magento2-infinitescroll/blob/master/media/backend_config.png)
   
-  ![Image of magento admin config](https://github.com/magepow/magento2-infinitescroll/blob/master/media/backend_config.PNG)
-
-  Select `yes` to enable the module
-  
-  ## 2. Details Configuration
-  
-   In `stores->configuration->magepow->infinitescroll` we set: 
-   * Delay ms : Delay time for the scroll down.
-   * Content : Select the elements you want to be loaded more
-   * Pagination: Select the page number to config load more
-   * Next : Select the link for the next page
-   * Item : Select for the class name that you want to config load more
-   * Loading text : Place any text you want when loading the page
-   * Done text : Done text using when the scroll reachs the bottom
-   * Loading Image placeholder : Loaded more icon
-   * Load More threshold : When this page number is reached, a button to load more products will be shown instead of continue loading products automatically with the scroll
-   * Load More button text: Set an offset before page end from which the content will start to load
-   
+   In `Stores > Configuration > Magepow > Infinitescroll` we set: 
+   * **Delay (ms)**: Delay time for the scroll down, default 600.
+   * **Content**: Select for the elements that surrounds the items you will be loading more of (For Ex. = .classname/#id).
+   * **Pagination**: Select class, id for paging loaded more.
+   * **Next**: Select class, id for the link to to the next page.
+   * **Item**: Select for the class name that you want to config all items you will load more.
+   * **Loading text**: Place any text you want when loading the page.
+   * **Done text**: When the download is completed, the text you configured will appear.
+   * **Loading Image placeholder**: The icons you want are displayed while downloading more, you can change it arbitrarily or use Magento's default icons.
+   * **Load More threshold**: When this page number is reached, a button to load more products will be shown instead of continue loading products automatically with the scroll.
+   * **Load More button text**: Configure the download button text.
+   After you finish configuring, save and clear the cache.
    Run the following command:
    
    ```
    php bin/magento cache:clean
    ```
-  ## 3. Result
+  ## 2.2. Result
    
    ![Image of magento store front](https://github.com/magepow/magento2-infinitescroll/blob/master/media/result_frontend_1.png)
    ![Image of magento store front](https://github.com/magepow/magento2-infinitescroll/blob/master/media/result_frontend_2.png)
@@ -119,5 +115,5 @@ If this project help you reduce time to develop, you can give me a cup of coffee
 
 * [Hire Magento Developer](https://magepow.com/hire-magento-developer.html)
 
-[![Latest Stable Version](https://poser.pugx.org/magepow/productzoom/v/stable)](https://packagist.org/packages/magepow/infinitescroll)
-[![Total Downloads](https://poser.pugx.org/magepow/productzoom/downloads)](https://packagist.org/packages/magepow/infinitescroll)
+[![Latest Stable Version](https://poser.pugx.org/magepow/infinitescroll/v/stable)](https://packagist.org/packages/magepow/infinitescroll)
+[![Total Downloads](https://poser.pugx.org/magepow/infinitescroll/downloads)](https://packagist.org/packages/magepow/infinitescroll)
