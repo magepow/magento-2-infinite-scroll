@@ -7,7 +7,7 @@
 
 **See more information**:
 
-- [Features and Benefits](https://magepow.com/magento-categories-extension.html)
+- [Detail](https://magepow.com/magento-2-infinite-scroll-extension.html)
 
 - [Documentation](https://docs.alothemes.com/m2/extension/infinitescroll/)
 
