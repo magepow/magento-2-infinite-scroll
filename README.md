@@ -1,13 +1,11 @@
-<<<<<<< HEAD
 
 [![Latest Stable Version](https://poser.pugx.org/magepow/infinitescroll/v/stable)](https://packagist.org/packages/magepow/infinitescroll)
 [![Total Downloads](https://poser.pugx.org/magepow/infinitescroll/downloads)](https://packagist.org/packages/magepow/infinitescroll)
 [![Daily Downloads](https://poser.pugx.org/magepow/infinitescroll/d/daily)](https://packagist.org/packages/magepow/infinitescroll)
 # Magento 2 Infinite Scroll
-=======
+
 ## Magento 2 Infinite Scroll (Magepow Infinite Scroll extension Free)
 
->>>>>>> fe4ebd17adb6c962084eb1567297b3c7a89b2d60
 **Infinite scroll** for Magento 2 automatically loads product catalog without reloading the page. Your customers will be pleasantly surprised with supportive navigation and high performance of your web store.
 
 [![Latest Stable Version](https://poser.pugx.org/magepow/infinitescroll/v/stable)](https://packagist.org/packages/magepow/infinitescroll)
