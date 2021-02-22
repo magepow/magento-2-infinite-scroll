@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0"?>
+ 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
     <acl>
-         <resources>
+        <resources>
             <resource id="Magento_Backend::admin">
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Magepow_InfiniteScroll::magepow_infinitescroll" title="Infinite Scroll"/>
+                            <resource id="Magepow_InfiniteScroll::config" title="Infinite Scroll" />
                         </resource>
                     </resource>
                 </resource>

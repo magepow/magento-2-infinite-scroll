@@ -8,7 +8,7 @@
 			<class>separator-top</class>
 			<label>Infinite Scroll</label>
 			<tab>magepow</tab>
-			<resource>Magepow_InfiniteScroll::infinite_scroll</resource>
+			<resource>Magepow_InfiniteScroll::config</resource>
 			<group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
 				<label>General Settings</label>
 				<field id="enabled" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">

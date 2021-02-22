@@ -1,19 +1,36 @@
+<<<<<<< HEAD
 
 [![Latest Stable Version](https://poser.pugx.org/magepow/infinitescroll/v/stable)](https://packagist.org/packages/magepow/infinitescroll)
 [![Total Downloads](https://poser.pugx.org/magepow/infinitescroll/downloads)](https://packagist.org/packages/magepow/infinitescroll)
 [![Daily Downloads](https://poser.pugx.org/magepow/infinitescroll/d/daily)](https://packagist.org/packages/magepow/infinitescroll)
 # Magento 2 Infinite Scroll
+=======
+## Magento 2 Infinite Scroll (Magepow Infinite Scroll extension Free)
+
+>>>>>>> fe4ebd17adb6c962084eb1567297b3c7a89b2d60
 **Infinite scroll** for Magento 2 automatically loads product catalog without reloading the page. Your customers will be pleasantly surprised with supportive navigation and high performance of your web store.
 
+[![Latest Stable Version](https://poser.pugx.org/magepow/infinitescroll/v/stable)](https://packagist.org/packages/magepow/infinitescroll)
+[![Total Downloads](https://poser.pugx.org/magepow/infinitescroll/downloads)](https://packagist.org/packages/magepow/infinitescroll)
+
+**See more information**:
+
+- [Detail](https://magepow.com/magento-2-infinite-scroll-extension.html)
+
+- [Documentation](https://docs.alothemes.com/m2/extension/infinitescroll/)
+
+- [Video tutorial](https://www.youtube.com/watch?v=gTemvUzrOJg&t=57s)
+
+## How to use Infinite Scroll extension
 Before you continue, ensure you meet the following requirements:
 
   * You have installed magento2
   * You are using a Linux or Mac OS machine. Windows is not currently supported.
   Install magento2-instagram extension
 
-## Step 1 : Download Magento 2 Infinitescroll Extension
+### Step 1 : Download Magento 2 Infinitescroll Extension
 
- ## Install via composer (recommend)
+ #### Install via composer (recommend)
 Run the following commands in Magento 2 root folder:
 ```
 composer require magepow/infinitescroll
@@ -21,22 +38,23 @@ php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy -f
 ```
 
-## Step 2: User guide
-  #### Key features of Magento 2 Infinitescroll Extension:
+### Step 2: User guide
+  #### Key features of Magento 2 Infinite scroll Extension:
   * Ajax scroll without interruption.
   * Freely scroll down & See what page of the catalog they're on.
   * Automatically loading pages.
   * Show Loading Button.
-  * Possibility to give/ share links to certain position.
+  * Possibility to give/ share links to a certain positions.
   * Easy to customize.
   * Similar technique as seen on Twitter, Facebook.
   * Increase the conversion rate at your store.
   * Easy to Change Button and Loading Text.
+
   ### 2.1. General configuration
 
   `Login to Magento admin > Stores > Configuration > Magepow > Infinitescroll > Enable > Choose Yes to enable the module.`
   
-  ![Image of magento admin config](https://github.com/magepow/magento2-infinitescroll/blob/master/media/backend_config.png)
+  ![Image of Magento admin config](https://github.com/magepow/magento2-infinitescroll/blob/master/media/backend_config.png)
   
    In `Stores > Configuration > Magepow > Infinitescroll` we set: 
    * **Delay (ms)**: Delay time for the scroll down, default 600.
@@ -55,11 +73,11 @@ php bin/magento setup:static-content:deploy -f
    ```
    php bin/magento cache:clean
    ```
-  ## 2.2. Result
+  ### 2.2. Result
    
    ![Image of magento store front](https://github.com/magepow/magento2-infinitescroll/blob/master/media/result_frontend_1.png)
    ![Image of magento store front](https://github.com/magepow/magento2-infinitescroll/blob/master/media/result_frontend_2.png)
-   
+
  ## Donation
 
 If this project help you reduce time to develop, you can give me a cup of coffee :) 
