@@ -1430,3 +1430,5 @@ IASTriggerExtension.prototype.defaults = {
  */
 IASTriggerExtension.prototype.priority = 1000;
 }
+
+window.IASCallbacks=IASCallbacks;window.IASHistoryExtension=IASHistoryExtension;window.IASTriggerExtension=IASTriggerExtension;window.IASSpinnerExtension=IASSpinnerExtension;window.IASPagingExtension=IASPagingExtension;window.IASNoneLeftExtension=IASNoneLeftExtension;
