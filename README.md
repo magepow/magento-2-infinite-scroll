@@ -1,7 +1,4 @@
 
-[![Latest Stable Version](https://poser.pugx.org/magepow/infinitescroll/v/stable)](https://packagist.org/packages/magepow/infinitescroll)
-[![Total Downloads](https://poser.pugx.org/magepow/infinitescroll/downloads)](https://packagist.org/packages/magepow/infinitescroll)
-[![Daily Downloads](https://poser.pugx.org/magepow/infinitescroll/d/daily)](https://packagist.org/packages/magepow/infinitescroll)
 # Magento 2 Infinite Scroll
 
 ## Magento 2 Infinite Scroll (Magepow Infinite Scroll extension Free)
@@ -10,6 +7,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/magepow/infinitescroll/v/stable)](https://packagist.org/packages/magepow/infinitescroll)
 [![Total Downloads](https://poser.pugx.org/magepow/infinitescroll/downloads)](https://packagist.org/packages/magepow/infinitescroll)
+[![Daily Downloads](https://poser.pugx.org/magepow/infinitescroll/d/daily)](https://packagist.org/packages/magepow/infinitescroll)
 
 **See more information**:
 
