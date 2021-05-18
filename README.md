@@ -1,6 +1,4 @@
 
-# Magento 2 Infinite Scroll
-
 ## Magento 2 Infinite Scroll (Magepow Infinite Scroll extension Free)
 
 **Infinite scroll** for Magento 2 automatically loads product catalog without reloading the page. Your customers will be pleasantly surprised with supportive navigation and high performance of your web store.
@@ -16,6 +14,22 @@
 - [Documentation](https://docs.alothemes.com/m2/extension/infinitescroll/)
 
 - [Video tutorial](https://www.youtube.com/watch?v=gTemvUzrOJg&t=57s)
+
+## Highlight Features
+
+- Automatically load content and images in just one page.
+
+- Visitors can see all in just one page
+
+- Display load more chart to help users see more products.
+
+- Reduce the request load to the server, increase website speed
+
+- Increase professional animation effects for Magento website.
+
+- Support to increase website ranking on search engines
+
+- Responsive
 
 ## How to use Infinite Scroll extension
 Before you continue, ensure you meet the following requirements:
