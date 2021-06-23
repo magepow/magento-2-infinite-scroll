@@ -23,25 +23,22 @@ if ($loadingImage) {
         "use strict";
         $(document).ready(function () {
             $('body').addClass('infinitescroll');
-            var ias = $.ias({
+            window.ias = $.ias({
                 container: "<?php echo $content;?>",
                 item: "<?php echo $item;?>",
                 pagination: "<?php echo $pagination;?>",
                 next: "<?php echo $next;?>",
                 delay: "<?php echo $delay;?>",
             });
-
-            window.ias = $.ias();
             window.ias.extension(new IASSpinnerExtension({
                 src: "<?php echo $loadingImage; ?>",
                 html: '<div class="iass-spinner"><img src="{src}"/><span><?php echo $loadingText; ?></span></div>'
             }));
-
             window.ias.extension(new IASNoneLeftExtension({
                 text: "<?php echo $doneText;?>",
                 html: '<div class="ias-noneleft">{text}</div>'
             }));
-           window.ias.extension(new IASTriggerExtension({
+            window.ias.extension(new IASTriggerExtension({
                 text:"<?php echo $loadMoreText ?>",
                 html:'<div class="ias-trigger ias-trigger-next"><button class="load-more"><?php echo $loadMoreText ?></button></div>',
                 textPrev:"<?php echo $loadMoreText ?>",
