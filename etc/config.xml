@@ -6,7 +6,7 @@
                 <enabled>1</enabled>
                 <delay>600</delay>
                 <content>.main</content>
-                <pagination>.pages-items</pagination>
+                <pagination>.pages-items, .pager__list</pagination>
                 <next>.next</next>
                 <item>.product-item</item>
                 <loading_image/>
