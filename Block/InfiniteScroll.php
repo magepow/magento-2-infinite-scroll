@@ -1,19 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Magepow\InfiniteScroll\Block;
 
-/**
- * Class InfiniteScroll
- *
- */
+use Magento\Framework\Exception\NoSuchEntityException;
+
 class InfiniteScroll extends \Magento\Framework\View\Element\Template
 {
+    private \Magento\Store\Model\StoreManagerInterface $storeManager;
 
-   /**
+    /**
      * InfiniteScroll constructor.
      * @param \Magento\Framework\View\Element\Template\Context $context
-     * @param \Magento\Store\Model\StoreManagerInterface $storeManager
-     * @param array $data
+     * @param \Magento\Store\Model\StoreManagerInterface       $storeManager
+     * @param array                                            $data
      */
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
@@ -26,15 +27,17 @@ class InfiniteScroll extends \Magento\Framework\View\Element\Template
 
 
     /**
-     * getLoadingImage
-     *
-     * @return mixed
+     * @param null $img
+     * @return string
      */
-    public function getMedia($img=null)
+    public function getMedia($img = null): string
     {
-        $urlMedia = $this->storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
-        if($img) return $urlMedia . $img;
-        return $urlMedia;
-    }
+        $urlMedia = '';
+        try {
+            $urlMedia = $this->storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
+        } catch (NoSuchEntityException $e) {
+        }
 
+        return $img ? $urlMedia . $img : $urlMedia;
+    }
 }
