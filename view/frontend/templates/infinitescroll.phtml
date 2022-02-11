@@ -1,4 +1,8 @@
 <?php
+/**
+ * @var $block Magepow\InfiniteScroll\Block\InfiniteScroll
+ */
+
 $helper = $this->helper('Magepow\InfiniteScroll\Helper\Data');
 $isEnabled      = $helper->getConfigModule('general/enabled');
 $delay          = $helper->getConfigModule('general/delay');
@@ -11,12 +15,12 @@ $doneText       = $helper->getConfigModule('general/done_text');
 $loadMore       = $helper->getConfigModule('general/load_more');
 $loadMoreText   = $helper->getConfigModule('general/load_more_text');
 $loadingImage   = $helper->getConfigModule('general/loading_image');
-$imgPath        = 'magepow/infinitescroll/'.$loadingImage;
+$imgPath        = 'magepow/infinitescroll/'. $loadingImage;
 if ($loadingImage) {
     $loadingImage = $block->getMedia($imgPath);
-}else{
+} else {
     $loadingImage = $this->getViewFileUrl('images/loader-1.gif');
-} 
+}
 ?>
 <script type="text/javascript">
     require(['jquery', 'magepow/infinitescroll', 'catalogAddToCart'], function ($) {
@@ -24,30 +28,30 @@ if ($loadingImage) {
         $(document).ready(function () {
             $('body').addClass('infinitescroll');
             window.ias = $.ias({
-                container: "<?php echo $content;?>",
-                item: "<?php echo $item;?>",
-                pagination: "<?php echo $pagination;?>",
-                next: "<?php echo $next;?>",
-                delay: "<?php echo $delay;?>",
+                container: "<?=  $content ?>",
+                item: "<?= $item ?>",
+                pagination: "<?= $pagination ?>",
+                next: "<?= $next ?>",
+                delay: "<?= $delay ?>",
             });
             window.ias.extension(new IASSpinnerExtension({
-                src: "<?php echo $loadingImage; ?>",
-                html: '<div class="iass-spinner"><img src="{src}"/><span><?php echo $loadingText; ?></span></div>'
+                src: "<?= $loadingImage ?>",
+                html: '<div class="iass-spinner"><img src="{src}"/><span><?= $loadingText ?></span></div>'
             }));
             window.ias.extension(new IASNoneLeftExtension({
-                text: "<?php echo $doneText;?>",
+                text: "<?= $doneText ?>",
                 html: '<div class="ias-noneleft">{text}</div>'
             }));
             window.ias.extension(new IASTriggerExtension({
-                text:"<?php echo $loadMoreText ?>",
-                html:'<div class="ias-trigger ias-trigger-next"><button class="load-more"><?php echo $loadMoreText ?></button></div>',
-                textPrev:"<?php echo $loadMoreText ?>",
-                htmlPrev:'<div class="ias-trigger ias-trigger-prev"><button class="load-more"><?php echo $loadMoreText ?></button></div>',
-                offset:"<?php echo $loadMore ?>",
+                text: "<?= $loadMoreText ?>",
+                html: '<div class="ias-trigger ias-trigger-next"><button class="load-more"><?= $loadMoreText ?></button></div>',
+                textPrev: "<?= $loadMoreText ?>",
+                htmlPrev: '<div class="ias-trigger ias-trigger-prev"><button class="load-more"><?= $loadMoreText ?></button></div>',
+                offset: "<?= $loadMore ?>",
             }));
-            window.ias.on('rendered', function(items){
+            window.ias.on('rendered', function (items) {
                 $('body').trigger('contentUpdated');
-                $( "form[data-role='tocart-form']" ).catalogAddToCart();
+                $("form[data-role='tocart-form']").catalogAddToCart();
             });
         });
     });
