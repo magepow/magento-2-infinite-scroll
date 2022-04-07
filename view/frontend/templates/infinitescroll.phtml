@@ -27,6 +27,9 @@ if ($loadingImage) {
         "use strict";
         $(document).ready(function () {
             $('body').addClass('infinitescroll');
+            if(jQuery().ias) {
+                $.ias('destroy');
+            }
             window.ias = $.ias({
                 container: "<?=  $content ?>",
                 item: "<?= $item ?>",
