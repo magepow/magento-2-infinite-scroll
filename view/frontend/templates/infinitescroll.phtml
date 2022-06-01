@@ -30,6 +30,11 @@ if ($loadingImage) {
             if(jQuery().ias) {
                 $.ias('destroy');
             }
+            $("<?= $pagination ?>").find('a').each(function() {
+                var url = $(this).attr('href');
+                if(url.includes('?')) return;
+                $(this).attr('href', url + '?isAjax=1');
+            });
             window.ias = $.ias({
                 container: "<?=  $content ?>",
                 item: "<?= $item ?>",
