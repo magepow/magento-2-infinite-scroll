@@ -171,9 +171,6 @@ IASCallbacks.prototype = {
  *
  * Copyright 2014 Webcreate (Jeroen Fiege)
  */
-define([
-    'jquery'
-], function () {
 (function($) {
 
     'use strict';
@@ -316,7 +313,7 @@ define([
             // always take the last matching item
             var next_url = $(this.nextSelector, container).last().attr('href');
             if(typeof(next_url) != 'undefined') {
-                next_url += '&ajaxscroll=1';
+                next_url += next_url.includes('?') ? '&ajaxscroll=1' : '?ajaxscroll=1';
             } else {
                 next_url = '';
             }
@@ -746,7 +743,6 @@ define([
         negativeMargin: 10
     };
 })(jQuery);
-});
 if(typeof(IASHistoryExtension) == "undefined"){
 /**
  * IAS History Extension
@@ -816,7 +812,7 @@ var IASHistoryExtension = function (options) {
         // always take the last matching item
         var prev_url = jQuery(this.prevSelector, container).last().attr('href');
         if(typeof(prev_url) != 'undefined') {
-            prev_url += '&ajaxscroll=1';
+            prev_url += prev_url.includes('?') ? '&ajaxscroll=1' : '?ajaxscroll=1';
         } else {
             prev_url = '';
         }
