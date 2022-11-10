@@ -41,7 +41,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
         if (!$cfg) {
             return $values;
         }
-        $config = explode('/', $cfg);
+        $config = explode('/', (string) $cfg);
         $end = count($config) - 1;
         foreach ($config as $key => $vl) {
             if (isset($values[$vl])) {
