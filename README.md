@@ -90,6 +90,11 @@ php bin/magento setup:static-content:deploy -f
    ![Image of magento store front](https://github.com/magepow/magento2-infinitescroll/blob/master/media/result_frontend_1.png)
    ![Image of magento store front](https://github.com/magepow/magento2-infinitescroll/blob/master/media/result_frontend_2.png)
 
+  ### 3. Events
+  * Refresh Infinite Scroll update with Ajax use code:
+  ```
+  $('body').trigger('collectionUpdated');
+  ```
  ## Donation
 
 If this project help you reduce time to develop, you can give me a cup of coffee :) 
