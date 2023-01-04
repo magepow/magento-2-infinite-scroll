@@ -8,7 +8,12 @@ use Magento\Framework\Exception\NoSuchEntityException;
 
 class InfiniteScroll extends \Magento\Framework\View\Element\Template
 {
-    private \Magento\Store\Model\StoreManagerInterface $storeManager;
+    /**
+     * Store manager
+     *
+     * @var \Magento\Store\Model\StoreManagerInterface
+     */
+    private $storeManager;
 
     /**
      * InfiniteScroll constructor.
