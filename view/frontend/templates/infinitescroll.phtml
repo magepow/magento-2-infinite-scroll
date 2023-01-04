@@ -25,8 +25,8 @@ if ($loadingImage) {
 <script type="text/javascript">
     require(['jquery', 'magepow/infinitescroll', 'catalogAddToCart'], function ($) {
         "use strict";
-        $(document).ready(function () {
-            $('body').addClass('infinitescroll');
+        $('body').addClass('infinitescroll');
+        $(window).on('collectionUpdated', function () {
             if(jQuery().ias) {
                 $.ias('destroy');
             }
@@ -56,6 +56,10 @@ if ($loadingImage) {
                 $('body').trigger('contentUpdated');
                 $("form[data-role='tocart-form']").catalogAddToCart();
             });
+
+        });
+        $(document).ready(function () {
+            $('body').trigger('collectionUpdated');
         });
     });
 </script>
