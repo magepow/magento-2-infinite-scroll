@@ -8,26 +8,17 @@ use Magento\Framework\Exception\NoSuchEntityException;
 
 class InfiniteScroll extends \Magento\Framework\View\Element\Template
 {
-    /**
-     * Store manager
-     *
-     * @var \Magento\Store\Model\StoreManagerInterface
-     */
-    private $storeManager;
 
     /**
      * InfiniteScroll constructor.
      * @param \Magento\Framework\View\Element\Template\Context $context
-     * @param \Magento\Store\Model\StoreManagerInterface       $storeManager
      * @param array                                            $data
      */
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        \Magento\Store\Model\StoreManagerInterface $storeManager,
         array $data = []
     ) {
         parent::__construct($context, $data);
-        $this->storeManager = $storeManager;
     }
 
 
@@ -39,8 +30,9 @@ class InfiniteScroll extends \Magento\Framework\View\Element\Template
     {
         $urlMedia = '';
         try {
-            $urlMedia = $this->storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
+            $urlMedia = $this->_storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
         } catch (NoSuchEntityException $e) {
+            echo 'Error: ' . $e;
         }
 
         return $img ? $urlMedia . $img : $urlMedia;
