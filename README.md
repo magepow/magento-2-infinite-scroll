@@ -15,6 +15,8 @@
 
 - [Video tutorial](https://www.youtube.com/watch?v=gTemvUzrOJg&t=57s)
 
+- [Shopify version](https://apps.shopify.com/magepow-infinite-scroll)
+
 ## Highlight Features
 
 - Automatically load content and images in just one page.
@@ -168,6 +170,8 @@ If this project help you reduce time to develop, you can give me a cup of coffee
 * [Flexon - Multipurpose Shopify Theme](https://1.envato.market/c/1314680/275988/4415?u=https://themeforest.net/item/flexon-multipurpose-shopify-theme/33461048)
 
 **[Our Shopify App](https://apps.shopify.com/partners/maggicart)**
+
+* [Magepow Infinite Scroll](https://apps.shopify.com/magepow-infinite-scroll)
 
 * [Magepow Size Chart](https://apps.shopify.com/magepow-size-chart)
 
