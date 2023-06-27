@@ -268,7 +268,7 @@ IASCallbacks.prototype = {
 
             // if the don't have a last element, the DOM might not have been loaded,
             // or the selector is invalid
-            if (0 === $lastElement.size()) {
+            if (0 === $lastElement.length) {
                 return UNDETERMINED_SCROLLOFFSET;
             }
 
@@ -833,7 +833,7 @@ var IASHistoryExtension = function (options) {
 
         // if the don't have a first element, the DOM might not have been loaded,
         // or the selector is invalid
-        if (0 === $firstElement.size()) {
+        if (0 === $firstElement.length) {
             return -1;
         }
 
@@ -1227,7 +1227,7 @@ var IASSpinnerExtension = function(options) {
     this.getSpinner = function() {
         var $spinner = jQuery('#ias_spinner_' + this.uid);
 
-        if ($spinner.size() > 0) {
+        if ($spinner.length > 0) {
             return $spinner;
         }
 
@@ -1240,7 +1240,7 @@ var IASSpinnerExtension = function(options) {
     this.hasSpinner = function() {
         var $spinner = jQuery('#ias_spinner_' + this.uid);
 
-        return ($spinner.size() > 0);
+        return ($spinner.length > 0);
     };
 
     /**
