@@ -2,7 +2,7 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
 	<system>
-		<tab id="magepow" translate="label" sortOrder="89">
+		<tab id="magepow" translate="label" sortOrder="102">
 			<label>Magepow</label>
 		</tab>
 		<section id="magepow_infinitescroll" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
