@@ -14,7 +14,7 @@
                 <loading_text><![CDATA[<em>Loading - please wait...</em>]]></loading_text>
                 <done_text><![CDATA[<em>You've reached the end of the item.</em>]]></done_text>
                  <load_more>3</load_more>
-                <load_more_text>Load more items</load_more_text>
+                <load_more_text>Load more</load_more_text>
             </general>
         </magepow_infinitescroll>
     </default>
