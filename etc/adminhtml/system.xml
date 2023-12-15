@@ -20,6 +20,7 @@
 				<field id="delay" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
 					<label>Delay (ms)</label>
 					<comment><![CDATA[Delay value for scroll down. default: 600]]></comment>
+					<validate>required-entry validate-digits validate-zero-or-greater</validate>
 				</field>
 				<field id="content" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
 					<label>Content</label>
@@ -54,6 +55,7 @@
 				<field id="load_more" translate="label comment" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
 					<label>Load More threshold</label>  
 					<comment><![CDATA[When this page number is reached, a button to load more products will be shown instead of continue loading products automatically with the scroll (this could be useful to help the user to reach the footer). TIP: use a high number to disable this feature.]]></comment>
+					<validate>required-entry validate-digits</validate>
 				</field>
 				<field id="load_more_text" translate="label comment" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
 					<label>Load More button text</label>  

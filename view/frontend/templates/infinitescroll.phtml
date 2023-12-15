@@ -50,7 +50,7 @@ if ($loadingImage) {
                 html: '<div class="ias-trigger ias-trigger-next"><button class="load-more"><?= $loadMoreText ?></button></div>',
                 textPrev: "<?= $loadMoreText ?>",
                 htmlPrev: '<div class="ias-trigger ias-trigger-prev"><button class="load-more"><?= $loadMoreText ?></button></div>',
-                offset: "<?= $loadMore ?>",
+                offset: <?php echo ($loadMore > 0) ? $loadMore: 'false'  ?>,
             }));
             window.ias.on('rendered', function (items) {
                 $('body').trigger('contentUpdated');
