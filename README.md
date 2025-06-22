@@ -12,13 +12,13 @@
 
 [<img src="https://github.com/magepow/media/blob/master/icons/demo.svg" width="40" height="40">](https://demo.magepow.com/infinitescroll)
 
-- [Detail](https://magepow.com/magento-2-infinite-scroll.html)
+- [Package Pro](https://magepow.com/magento-2-infinite-scroll.html)
 
 - [Documentation](https://docs.alothemes.com/m2/extension/infinitescroll/)
 
 - [Video tutorial](https://www.youtube.com/watch?v=gTemvUzrOJg&t=57s)
 
-![Hyva version](https://github.com/magepow/magento2-infinitescroll/blob/main/media/hyva-version.png)
+[<img src="https://github.com/magepow/magento2-infinitescroll/blob/main/media/hyva-version.png" width="250" height="100">](https://magepow.com/magento-2-infinite-scroll.html)
 
 [<img src="https://github.com/magepow/media/blob/master/icons/shopify.svg" width="40" height="40">](https://apps.shopify.com/magepow-infinite-scroll)[Shopify version](https://apps.shopify.com/magepow-infinite-scroll)
 
