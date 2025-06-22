@@ -12,11 +12,13 @@
 
 - [<img src="https://github.com/magepow/media/blob/master/icons/demo.svg" width="40" height="40">](https://demo.magepow.com/infinitescroll)
 
-- [Detail](https://magepow.com/magento-2-infinite-scroll-extension.html)
+- [Detail](https://magepow.com/magento-2-infinite-scroll.html)
 
 - [Documentation](https://docs.alothemes.com/m2/extension/infinitescroll/)
 
 - [Video tutorial](https://www.youtube.com/watch?v=gTemvUzrOJg&t=57s)
+
+- ![Hyva version](https://github.com/magepow/magento2-infinitescroll/blob/main/media/hyva-version.png)
 
 - [<img src="https://github.com/magepow/media/blob/master/icons/shopify.svg" width="40" height="40">](https://apps.shopify.com/magepow-infinite-scroll)[Shopify version](https://apps.shopify.com/magepow-infinite-scroll)
 
@@ -69,7 +71,7 @@ php bin/magento setup:static-content:deploy -f
 
   `Login to Magento admin > Stores > Configuration > Magepow > Infinitescroll > Enable > Choose Yes to enable the module.`
   
-  ![Image of Magento admin config](https://github.com/magepow/magento2-infinitescroll/blob/master/media/backend_config.png)
+  ![Image of Magento admin config](https://github.com/magepow/magento2-infinitescroll/blob/main/media/backend_config.png)
   
    In `Stores > Configuration > Magepow > Infinitescroll` we set: 
    * **Delay (ms)**: Delay time for the scroll down, default 600.
@@ -90,8 +92,8 @@ php bin/magento setup:static-content:deploy -f
    ```
   ### 2.2. Result
    
-   ![Image of magento store front](https://github.com/magepow/magento2-infinitescroll/blob/master/media/result_frontend_1.png)
-   ![Image of magento store front](https://github.com/magepow/magento2-infinitescroll/blob/master/media/result_frontend_2.png)
+   ![Image of magento store front](https://github.com/magepow/magento2-infinitescroll/blob/main/media/result_frontend_1.png)
+   ![Image of magento store front](https://github.com/magepow/magento2-infinitescroll/blob/main/media/result_frontend_2.png)
 
   ### 3. Events
   * Refresh Infinite Scroll update with Ajax use code:
