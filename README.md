@@ -10,7 +10,7 @@
 
 **See more information**:
 
-- [<img src="https://github.com/magepow/media/blob/master/icons/demo.svg" width="40" height="40">](https://demo.magepow.com/infinitescroll)
+[<img src="https://github.com/magepow/media/blob/master/icons/demo.svg" width="40" height="40">](https://demo.magepow.com/infinitescroll)
 
 - [Detail](https://magepow.com/magento-2-infinite-scroll.html)
 
@@ -18,9 +18,9 @@
 
 - [Video tutorial](https://www.youtube.com/watch?v=gTemvUzrOJg&t=57s)
 
-- ![Hyva version](https://github.com/magepow/magento2-infinitescroll/blob/main/media/hyva-version.png)
+![Hyva version](https://github.com/magepow/magento2-infinitescroll/blob/main/media/hyva-version.png)
 
-- [<img src="https://github.com/magepow/media/blob/master/icons/shopify.svg" width="40" height="40">](https://apps.shopify.com/magepow-infinite-scroll)[Shopify version](https://apps.shopify.com/magepow-infinite-scroll)
+[<img src="https://github.com/magepow/media/blob/master/icons/shopify.svg" width="40" height="40">](https://apps.shopify.com/magepow-infinite-scroll)[Shopify version](https://apps.shopify.com/magepow-infinite-scroll)
 
 ## Highlight Features
 
